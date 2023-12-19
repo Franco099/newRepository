@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <title>Document</title>
+    <style>
+                @keyframes celebracion {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.2); }
+            100% { transform: scale(1); }
+        }
+
+        .celebrar {
+            animation: celebracion 1s ease-out; /* Puedes ajustar la duración y la función de temporización según tus preferencias */
+        }
+
+    h1{
+        align-items: center;
+        text-align: center;
+    }
+
+    html{
+        background-image: url('https://unblast.com/wp-content/uploads/2020/05/Light-Wood-Background-Texture-1.jpg');
+        background-size: cover;
+        background-position: center;
+    }
+    </style>
+
+</head>
+
+<body>
+<section class="section marcador">
+
+    <div class="container">
+        <div class="columns">
+            <div class="column is-two-fifths is-offset-4 is-mobile">
+                <div class="card">
+                    <div class="card-image">
+                        <figure class="image is-2by1">
+                            <img src="https://www.divernostrum.es/wp-content/uploads/2022/04/tecnicas-aprender-jugar-billar-principiante-foto.jpg" alt="">
+                        </figure>
+                    </div>
+                    <header>
+                        <b class="card-header-title">Marcador de puntos</b>
+                    </header>
+                    <div class="card-content">
+                        <div class="content">
+                            <h1 class="title is-1"><span id="p1Display">0</span> - <span id="p2Display">0</span></h1>
+                            <p class="subtitle">Presione los botones para anotar los puntos</p>
+
+                            <label for="selector" class="large is-large is-inlie">Cantidad máxima de puntos:</label>
+                            <div class="select is-rounded">
+                                <select name="" id="selector">
+                                    <option value="5">5</option>
+                                    <option value="7">7</option>
+                                    <option value="10">10</option>
+                                    <option value="12">12</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <footer class="card-footer">
+
+                        <button id="p1Button" class="is-primary button card-footer-item">Punto - Jugador 1</button>
+                        <button id="p2Button" class="is-success button card-footer-item">Punto - Jugador 2</button>
+                        <button id="resetButton" class="is-danger button card-footer-item">Reiniciar</button>
+
+                    </footer>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+    <script src="../files/scorekeeper.js"></script>
+</body>
+
+</html>
